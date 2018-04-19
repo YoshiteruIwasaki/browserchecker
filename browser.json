@@ -1,0 +1,29 @@
+{
+    "browsers": [
+        {
+            "name": "Firefox",
+            "full_name": "Mozilla Firefox",
+            "version": "59.0.2"
+        },
+        {
+            "name": "Chrome",
+            "full_name": "Google Chrome",
+            "version": "65.0.3325.181"
+        },
+        {
+            "name": "Edge",
+            "full_name": "Microsoft Edge",
+            "version": "40.15063.0.0"
+        },
+        {
+            "name": "IE11",
+            "full_name": "Internet Explorer 11",
+            "version": null
+        },
+        {
+            "name": "Safari",
+            "full_name": "Safari",
+            "version": "11.1"
+        }
+    ]
+}
