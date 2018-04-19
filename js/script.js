@@ -57,7 +57,7 @@ window.self.onload = function() {
 
 
 
-    $.get("api/browser.json", function(data) {
+    $.get("browser.json", function(data) {
         var hasData = false;
         $.each(data.browsers, function(k, master) {
             if (master.name.indexOf(target.name) !== -1) {
