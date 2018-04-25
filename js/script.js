@@ -27,9 +27,13 @@ window.self.onload = function() {
 
     document.getElementById("javascriptEnabled").innerHTML = "有効";
     var target = woothee.parse(window.navigator.userAgent);
-    document.getElementById("browser").innerHTML = target.name + " " + target.version;
-    document.getElementById("os").innerHTML = target.os + " " + target.os_version;
+    document.getElementById("browser").innerHTML = '<i class="fa fa-firefox" aria-hidden="true"></i> ' + target.name + " " + target.version;
+    document.getElementById("os").innerHTML = '<i class="fa fa-apple" aria-hidden="true"></i> ' + target.os + " " + target.os_version;
     document.getElementById("userAgent").innerHTML = window.navigator.userAgent;
+
+    if(target.category != "pc"){
+    	alert("まだ対応していません。");
+    }
 
     var setCookie = function(cookieName, value) {
         var cookie = cookieName + "=" + value + ";";
@@ -63,9 +67,10 @@ window.self.onload = function() {
             if (master.name.indexOf(target.name) !== -1) {
                 hasData = true;
                 if (master.version.indexOf(target.version) !== -1) {
-                    document.getElementById("checkVersion").innerHTML = "✓ このブラウザは最新バージョンです。";
+                	document.getElementById("browserStatus").innerHTML = "<i class='fa fa-check-circle fa-4x white-text animated rotateIn' aria-hidden='true'></i>";
+                    document.getElementById("checkVersion").innerHTML = "このブラウザは最新バージョンです";
                 } else {
-                    document.getElementById("checkVersion").innerHTML = "より新しいバージョンをご利用いただけます。";
+                    document.getElementById("checkVersion").innerHTML = "より新しいバージョンをご利用いただけます";
                 }
             }
         });
