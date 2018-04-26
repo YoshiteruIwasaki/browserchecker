@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <title>ブラウザバージョンチェッカー</title>
 <link href="./favicon.ico?1512702336" type="image/x-icon" rel="icon" />
 <link href="./favicon.ico?1512702336" type="image/x-icon" rel="shortcut icon" />
@@ -28,50 +29,62 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />
-<link rel="stylesheet" href="./css/style.css?1516103308" />
-</head>
-<body style="background-color: #0099CC;">
-  <div class="container-fluid">
-    <div class="d-flex flex-row">
-      <div class="p-1">
-        <span id="browserStatus"></span>
-      </div>
-      <div class="p-1">
-        <div id="loading">
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          現在検出中です...
-        </div>
-        <div id="item" style="display: none;">
-          <div class="lead white-text" id="checkVersion"></div>
-          <div class="d-inline-flex p-1 white-text" style="background-color: #00C851;padding-left:.5rem !important;padding-right:.5rem !important;">
-            <span id="browser"></span>&nbsp;(&nbsp;<span id="os"></span>&nbsp;)
-          </div>
-          <div style="display: none;">
-            <strong>Javascript</strong> <span id="javascriptEnabled">無効</span> <strong>Cookie</strong>
-            <span id="cookieEnabled">無効</span> <strong>ブラウザサイズ</strong> <span
-              id="windowSize"></span> <strong>画面サイズ</strong> <span
-              id="screenSize"></span> <strong>AdBlock</strong> <span
-              id="adblockEnabled">無効</span>
-         </div>
-        </div>
+<style type="text/css">
+<!--
+body {
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
+		'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック',
+		'MS PGothic', 'Helvetica', 'Arial', sans-serif;
+}
 
+.rotate-anime {
+	animation: rotate-anime 1.5s linear infinite;
+}
+@keyframes rotate-anime {
+0%  {transform: rotate(0);}
+100%  {transform: rotate(360deg);}
+}
+-->
+</style>
+</head>
+<body class="bg-light">
+  <div class="container" style="padding: 0;">
+    <div class="white-text p-1 text-center bg-info" id="checkVersionContainer" data-current="bg-success" data-newer="bg-warning" data-unsupported="bg-danger">
+      <div id="loadingHeader">ブラウザのサポート状況を確認</div>
+      <div id="header">
+        <span id="browserStatus" data-current="fa-check-circle animated rotateIn" data-newer="fa-download"></span>
+        <span id="checkVersion" data-current="このブラウザはサポートされています" data-newer="より新しいバージョンをご利用いただけます" data-unsupported="このブラウザはサポートされていません"></span>
       </div>
     </div>
-            <small id="userAgent" style="color:#eeeeee; font-size:60%"></small>
+    <div class="p-2">
+      <div id="loadingContents" class="text-center p-3">
+        <i class="fa fa-spinner cyan-text rotate-anime" aria-hidden="true"></i>
+        現在検出中です...
+      </div>
+      <div id="contents" style="display: none;">
+        <div>
+          <span id="browser" data-firefox="fa-firefox" data-chrome="fa-chrome" data-safari="fa-safari" data-edge="fa-edge" data-safari="fa-safari" data-ie="fa-internet-explorer"></span>
+          <small>&nbsp;(&nbsp;<span id="os" data-mac="fa-apple" data-windows="fa-windows"></span>&nbsp;) </small>
+        </div>
+        <div style="line-height: 1">
+          <small id="userAgent" style="font-size: 60%;" class="blue-grey-text"></small>
+        </div>
+      </div>
+    </div>
+    <div class="text-right" style="font-size: 60%;" class="grey-text">powered by <a href="">kikuzu</a></div>
   </div>
 
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
   <script src="./js/woothee.js"></script>
-	<script src="./js/script.js"></script>
-	<!-- SCRIPTS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
-	<!-- Animations init-->
-	<script>
-		new WOW().init();
-	</script>
+  <script src="./js/script.js"></script>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>ブラウザバージョンチェッカー</title>
+<link href="./favicon.ico?1512702336" type="image/x-icon" rel="icon" />
+<link href="./favicon.ico?1512702336" type="image/x-icon" rel="shortcut icon" />
+<meta name="description" content="ブラウザがサポートされているかチェックします。" />
+<meta property="og:title" content="ブラウザバージョンチェッカー" />
+<meta property="og:description" content="ブラウザがサポートされているかチェックします。" />
+<meta property="og:image" content="http://link.to/image" />
+<meta property="og:uri" content="https://kakubetsu.jp" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="twitter:description" content="ブラウザがサポートされているかチェックします。" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://kakubetsu.jp" />
+<meta property="twitter:title" content="kakubetsu" />
+<meta property="twitter:image" content="http://link.to/image" />
+<meta property="twitter:site" content="@kakubetsu" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />
+<link rel="stylesheet" href="./css/style.css?1516103308" />
+</head>
+<body style="background-color: #0099CC;">
+  <div class="container-fluid">
+    <div class="d-flex flex-row">
+      <div class="p-1">
+        <span id="browserStatus"></span>
+      </div>
+      <div class="p-1">
+        <div id="loading">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          現在検出中です...
+        </div>
+        <div id="item" style="display: none;">
+          <div class="lead white-text" id="checkVersion"></div>
+          <div class="d-inline-flex p-1 white-text" style="background-color: #00C851;padding-left:.5rem !important;padding-right:.5rem !important;">
+            <span id="browser"></span>&nbsp;(&nbsp;<span id="os"></span>&nbsp;)
+          </div>
+          <div style="display: none;">
+            <strong>Javascript</strong> <span id="javascriptEnabled">無効</span> <strong>Cookie</strong>
+            <span id="cookieEnabled">無効</span> <strong>ブラウザサイズ</strong> <span
+              id="windowSize"></span> <strong>画面サイズ</strong> <span
+              id="screenSize"></span> <strong>AdBlock</strong> <span
+              id="adblockEnabled">無効</span>
+         </div>
+        </div>
+
+      </div>
+    </div>
+            <small id="userAgent" style="color:#eeeeee; font-size:60%"></small>
+  </div>
+
+            <div data-current="このブラウザは最新バージョンです。" data-newer="より新しいバージョンをご利用いただけます。" data-update=
+            "ブラウザを更新" data-updatechrome="更新方法" id="browser-active"></div>
+
+
+  <script src="./js/woothee.js"></script>
+	<script src="./js/script.js"></script>
+	<!-- SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
+	<!-- Animations init-->
+	<script>
+		new WOW().init();
+	</script>
+</html>
