@@ -52,7 +52,7 @@ body {
     <div class="white-text p-1 text-center bg-info" id="checkVersionContainer" data-current="bg-success" data-newer="bg-warning" data-unsupported="bg-danger">
       <div id="loadingHeader">ブラウザのサポート状況を確認</div>
       <div id="header">
-        <span id="browserStatus" data-current="fa-check-circle animated rotateIn" data-newer="fa-download"></span>
+        <span id="browserStatus" data-current="fa-check-circle animated rotateIn" data-newer="fa-download"  data-unsupported="fa-warning"></span>
         <span id="checkVersion" data-current="このブラウザはサポートされています" data-newer="より新しいバージョンをご利用いただけます" data-unsupported="このブラウザはサポートされていません"></span>
       </div>
     </div>
@@ -63,8 +63,8 @@ body {
       </div>
       <div id="contents" style="display: none;">
         <div>
-          <span id="browser" data-firefox="fa-firefox" data-chrome="fa-chrome" data-safari="fa-safari" data-edge="fa-edge" data-safari="fa-safari" data-ie="fa-internet-explorer"></span>
-          <small>&nbsp;(&nbsp;<span id="os" data-mac="fa-apple" data-windows="fa-windows"></span>&nbsp;) </small>
+          <span id="browser" data-firefox="fa-firefox" data-chrome="fa-chrome" data-safari="fa-safari" data-edge="fa-edge" data-safari="fa-safari" data-ie="fa-internet-explorer" data-opera="fa-opera"></i>"></span>
+          <small>&nbsp;(&nbsp;<span id="os" data-mac="fa-apple" data-windows="fa-windows" data-ios="fa-mobile" data-android="fa-android" data-linux="fa-linux"></span>&nbsp;) </small>
         </div>
         <div style="line-height: 1">
           <small id="userAgent" style="font-size: 60%;" class="blue-grey-text"></small>

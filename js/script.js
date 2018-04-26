@@ -14,6 +14,8 @@ window.self.onload = function() {
     	browserIcon = document.getElementById("browser").dataset.ie;
     }else if(mybrowser.name == "Safari"){
     	browserIcon = document.getElementById("browser").dataset.safari;
+    }else if(mybrowser.name == "Opera"){
+    	browserIcon = document.getElementById("browser").dataset.opera;
     }
     if(mybrowser.os == "Mac OSX"){
     	osIcon = document.getElementById("os").dataset.mac;
@@ -47,11 +49,19 @@ window.self.onload = function() {
             }
         });
         if (!hasData) {
-            document.getElementById("checkVersion").innerHTML = "...現在検出できません。しばらくしてからもう一度お試しください。";
+        	document.getElementById("browserStatus").innerHTML = "<i class='fa "+ document.getElementById("browserStatus").dataset.unsupported + "' aria-hidden='true'></i>";
+            document.getElementById("checkVersion").innerHTML = document.getElementById("checkVersion").dataset.unsupported;
+            document.getElementById("checkVersionContainer").classList.add(document.getElementById("checkVersionContainer").dataset.unsupported);
+            document.getElementById("checkVersionContainer").classList.remove('bg-info');
         }
         document.getElementById("loadingHeader").style.display = "none";
         document.getElementById("loadingContents").style.display = "none";
         document.getElementById("header").style.display = "block";
         document.getElementById("contents").style.display = "block";
-    }, "json");
+    }, "json")
+    .fail(function() {
+        document.getElementById("checkVersion").innerHTML = "...現在検出できません。しばらくしてからもう一度お試しください。";
+        document.getElementById("checkVersionContainer").classList.add(document.getElementById("checkVersionContainer").dataset.unsupported);
+        document.getElementById("checkVersionContainer").classList.remove('bg-info');
+      });
 }
