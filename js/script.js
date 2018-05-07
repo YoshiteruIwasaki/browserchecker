@@ -21,14 +21,12 @@ window.self.onload = function() {
     	osIcon = document.getElementById("os").dataset.mac;
     }else if(mybrowser.os == "Windows"){
     	osIcon = document.getElementById("os").dataset.windows;
+    }else if(mybrowser.os == "iPhone"){
+    	osIcon = document.getElementById("os").dataset.ios;
     }
     document.getElementById("browser").innerHTML = '<i class="fa '+ browserIcon + '" aria-hidden="true"></i> ' + mybrowser.name + " " + mybrowser.version;
     document.getElementById("os").innerHTML = '<i class="fa '+ osIcon + '" aria-hidden="true"></i> ' + mybrowser.os + " " + mybrowser.os_version;
     document.getElementById("userAgent").innerHTML = window.navigator.userAgent;
-
-    if(mybrowser.category != "pc"){
-    	alert("まだ対応していません。");
-    }
 
     $.get("browser.json", function(data) {
         var hasData = false;
