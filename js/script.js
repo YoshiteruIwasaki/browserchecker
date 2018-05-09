@@ -23,6 +23,8 @@ window.self.onload = function() {
     	osIcon = document.getElementById("os").dataset.windows;
     }else if(mybrowser.os == "iPhone"){
     	osIcon = document.getElementById("os").dataset.ios;
+    }else if(mybrowser.os == "Android"){
+    	osIcon = document.getElementById("os").dataset.android;
     }
     document.getElementById("browser").innerHTML = '<i class="fa '+ browserIcon + '" aria-hidden="true"></i> ' + mybrowser.name + " " + mybrowser.version;
     document.getElementById("os").innerHTML = '<i class="fa '+ osIcon + '" aria-hidden="true"></i> ' + mybrowser.os + " " + mybrowser.os_version;
