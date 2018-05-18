@@ -1,6 +1,5 @@
 {
-    "browsers": [
-        {
+    "Windows": [{
             "name": "Firefox",
             "full_name": "Mozilla Firefox",
             "version": "59.0.2"
@@ -19,11 +18,32 @@
             "name": "IE11",
             "full_name": "Internet Explorer 11",
             "version": null
+        }
+    ],
+    "Mac OSX": [{
+            "name": "Firefox",
+            "full_name": "Mozilla Firefox",
+            "version": "59.0.2"
+        },
+        {
+            "name": "Chrome",
+            "full_name": "Google Chrome",
+            "version": "65.0.3325.181"
         },
         {
             "name": "Safari",
             "full_name": "Safari",
             "version": "11.1"
         }
-    ]
+    ],
+    "iPhone": [{
+        "name": "Safari",
+        "full_name": "Safari",
+        "version": "11.1"
+    }],
+    "Android": [{
+        "name": "Chrome",
+        "full_name": "Google Chrome",
+        "version": "65.0.3325.181"
+    }]
 }
