@@ -2,12 +2,12 @@
     "Windows": [{
             "name": "Firefox",
             "full_name": "Mozilla Firefox",
-            "version": "59.0.2"
+            "version": "60.0.2"
         },
         {
             "name": "Chrome",
             "full_name": "Google Chrome",
-            "version": "65.0.3325.181"
+            "version": "67.0.3396.87"
         },
         {
             "name": "Edge",
@@ -23,17 +23,17 @@
     "Mac OSX": [{
             "name": "Firefox",
             "full_name": "Mozilla Firefox",
-            "version": "59.0.2"
+            "version": "60.0.2"
         },
         {
             "name": "Chrome",
             "full_name": "Google Chrome",
-            "version": "65.0.3325.181"
+            "version": "67.0.3396.87"
         },
         {
             "name": "Safari",
             "full_name": "Safari",
-            "version": "11.1"
+            "version": "11.1.1"
         }
     ],
     "iPhone": [{
@@ -44,6 +44,6 @@
     "Android": [{
         "name": "Chrome",
         "full_name": "Google Chrome",
-        "version": "65.0.3325.181"
+        "version": "67.0.3396.87"
     }]
 }
