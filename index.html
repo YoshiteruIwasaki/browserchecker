@@ -215,7 +215,10 @@
      * @return {[type]} [description]
      */
     function textcopy() {
-      $("textarea").select();
+      var myScriptTag = document.getElementById('myScriptTag');
+      const range = document.createRange();
+      range.selectNode(myScriptTag);
+      window.getSelection().addRange(range);
       document.execCommand('copy');
     }
 
