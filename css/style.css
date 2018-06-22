@@ -35,7 +35,7 @@
             background-color: #1C2331;
         }
 
-        footer.page-footer {
+        .page-footer {
             background-color: #1C2331;
             margin-top: -1px;
         }
@@ -52,10 +52,6 @@
             color: #fff !important;
         }
         /*Call to action*/
-
-        .flex-center {
-           /* color: #fff;*/
-        }
 
         .view {
             background: url("https://mdbootstrap.com/img/Photos/Others/img%20(50).jpg")no-repeat center center fixed;
