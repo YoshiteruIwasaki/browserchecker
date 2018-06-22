@@ -12,8 +12,10 @@
   iframe.id = 'kikuzu-widget';
   iframe.style.border = '0px none';
   iframe.style.outline = '0px none currentcolor';
+  iframe.style.maxWidth = '100%';
   iframe.width = '520';
   iframe.height = '125';
+  iframe.frameborder='0';
   iframe.src = 'checker.html' + '?' + query;
 
   div.appendChild(iframe);
