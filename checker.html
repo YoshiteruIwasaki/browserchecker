@@ -2,92 +2,88 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>ブラウザバージョンチェッカー</title>
-  <link href="./favicon.ico?1512702336" type="image/x-icon" rel="icon" />
-  <link href="./favicon.ico?1512702336" type="image/x-icon" rel="shortcut icon" />
-  <meta name="description" content="ブラウザがサポートされているかチェックします。" />
-  <meta property="og:title" content="ブラウザバージョンチェッカー" />
-  <meta property="og:description" content="ブラウザがサポートされているかチェックします。" />
-  <meta property="og:image" content="http://link.to/image" />
-  <meta property="og:uri" content="https://kakubetsu.jp" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta property="twitter:description" content="ブラウザがサポートされているかチェックします。" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://kakubetsu.jp" />
-  <meta property="twitter:title" content="kakubetsu" />
-  <meta property="twitter:image" content="http://link.to/image" />
-  <meta property="twitter:site" content="@kakubetsu" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />
-  <style type="text/css">
-    < !-- body {
-      font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
-      'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック',
-      'MS PGothic', 'Helvetica', 'Arial', sans-serif;
-    }
-
-    .rotate-anime {
-      animation: rotate-anime 1.5s linear infinite;
-    }
-
-    @keyframes rotate-anime {
-      0% {
-        transform: rotate(0);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    -->
-  </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ブラウザバージョンチェクのためのwidget:kikuzu</title>
+    <link href="./favicon.ico?1512702336" type="image/x-icon" rel="icon" />
+    <link href="./favicon.ico?1512702336" type="image/x-icon" rel="shortcut icon" />
+    <meta name="description" content="kikuzuは数行のコードで簡単にあなたのサイトにブラウザのバージョンチェックのためのwidgetを埋め込めます。" />
+    <meta property="og:title" content="kikuzu.com" />
+    <meta property="og:description" content="kikuzuは数行のコードで簡単にあなたのサイトにブラウザのバージョンチェックのためのwidgetを埋め込めます。" />
+    <meta property="og:image" content="https://kikuzu.com/img/image.jpg" />
+    <meta property="og:uri" content="https://kikuzu.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="twitter:description" content="kikuzuは数行のコードで簡単にあなたのサイトにブラウザのバージョンチェックのためのwidgetを埋め込めます。" />
+    <meta property="twitter:card" content="https://kikuzu.com/img/large_image.jpg" />
+    <meta property="twitter:url" content="https://kikuzu.com" />
+    <meta property="twitter:title" content="kikuzu.com" />
+    <meta property="twitter:image" content="https://kikuzu.com/img/image.jpg" />
+    <meta property="twitter:site" content="@kikuzu.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css" />
+    <style type="text/css">
+        body {
+            font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', 'Helvetica', 'Arial', sans-serif;
+        }
+        
+        .rotate-anime {
+            animation: rotate-anime 1.5s linear infinite;
+        }
+        
+        @keyframes rotate-anime {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-light">
-  <div class="container" style="padding: 0;">
-    <div class="white-text p-1 text-center bg-info" id="checkVersionContainer" data-current="bg-success" data-newer="bg-warning" data-unsupported="bg-danger">
-      <div id="loadingHeader">ブラウザのサポート状況を確認</div>
-      <div id="header">
-        <span id="browserStatus" data-current="fa-check-circle animated rotateIn" data-newer="fa-download" data-unsupported="fa-warning"></span>
-        <span id="checkVersion" data-current="このブラウザはサポートされています" data-newer="より新しいバージョンをご利用いただけます" data-unsupported="このブラウザはサポートされていません"></span>
-      </div>
-    </div>
-    <div class="p-2">
-      <div id="loadingContents" class="text-center p-3">
-        <i class="fa fa-spinner cyan-text rotate-anime" aria-hidden="true"></i> 現在検出中です...
-      </div>
-      <div id="contents" style="display: none;">
-        <div>
-          <span id="browser" data-firefox="fa-firefox" data-chrome="fa-chrome" data-safari="fa-safari" data-edge="fa-edge" data-safari="fa-safari" data-ie="fa-internet-explorer" data-opera="fa-opera"></i>"></span>
-          <small>&nbsp;(&nbsp;<span id="os" data-mac="fa-apple" data-windows="fa-windows" data-ios="fa-mobile" data-android="fa-android" data-linux="fa-linux"></span>&nbsp;) </small>
+    <div class="container" style="padding: 0;">
+        <div class="white-text p-1 text-center bg-info" id="checkVersionContainer" data-current="bg-success" data-newer="bg-warning" data-unsupported="bg-danger">
+            <div id="loadingHeader">ブラウザのサポート状況を確認</div>
+            <div id="header">
+                <span id="browserStatus" data-current="fa-check-circle animated rotateIn" data-newer="fa-download" data-unsupported="fa-warning"></span>
+                <span id="checkVersion" data-current="このブラウザはサポートされています" data-newer="より新しいバージョンをご利用いただけます" data-unsupported="このブラウザはサポートされていません"></span>
+            </div>
         </div>
-        <div style="line-height: 1">
-          <small id="userAgent" style="font-size: 60%;" class="blue-grey-text"></small>
+        <div class="p-2">
+            <div id="loadingContents" class="text-center p-3">
+                <i class="fa fa-spinner cyan-text rotate-anime" aria-hidden="true"></i> 現在検出中です...
+            </div>
+            <div id="contents" style="display: none;">
+                <div>
+                    <span id="browser" data-firefox="fa-firefox" data-chrome="fa-chrome" data-safari="fa-safari" data-edge="fa-edge" data-safari="fa-safari" data-ie="fa-internet-explorer" data-opera="fa-opera"></span>
+                    <small>&nbsp;(&nbsp;<span id="os" data-mac="fa-apple" data-windows="fa-windows" data-ios="fa-mobile" data-android="fa-android" data-linux="fa-linux"></span>&nbsp;) </small>
+                </div>
+                <div style="line-height: 1">
+                    <small id="userAgent" style="font-size: 60%;" class="blue-grey-text"></small>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="text-right grey-text mr-1" style="font-size: 60%;">powered by <a href="https://kikuzu.com">kikuzu</a></div>
     </div>
-    <div class="text-right" style="font-size: 60%;" class="grey-text">powered by <a href="">kikuzu</a></div>
-  </div>
 
 
-  <!-- SCRIPTS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
-  <script src="./js/woothee.js"></script>
-  <script src="./js/script.js"></script>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
+    <script src="./js/woothee.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,8 @@
+/**
+ * kikuzu.com
+ *
+ */
+
 window.self.onload = function() {
 
     var parameters = location.search.substring(1).split("&");
