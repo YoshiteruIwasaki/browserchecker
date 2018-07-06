@@ -11,7 +11,6 @@
     var date = new Date();
     var param = date.getTime();
 
-
     var iframe = document.createElement('iframe');
     iframe.id = 'kikuzu-widget';
     iframe.style.border = '0px none';
