@@ -11,9 +11,6 @@
     var date = new Date();
     var param = date.getTime();
 
-    var host = location.hostname;
-    var protocol = location.protocol;
-
     var iframe = document.createElement('iframe');
     iframe.id = 'kikuzu-widget';
     iframe.style.border = '0px none';
@@ -22,7 +19,7 @@
     iframe.width = '520';
     iframe.height = '125';
     iframe.frameborder = '0';
-    iframe.src = protocol + "//" + host + '/checker.html' + '?' + query + '&t=' + param;
+    iframe.src = 'https://kikuzu.com/checker.html' + '?' + query + '&t=' + param;
 
     div.appendChild(iframe);
     var x = document.getElementsByTagName('script')[0];
