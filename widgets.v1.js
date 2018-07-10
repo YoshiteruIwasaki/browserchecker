@@ -22,7 +22,7 @@
     iframe.width = '520';
     iframe.height = '125';
     iframe.frameborder = '0';
-    iframe.src = 'https://kikuzu.com/checker.html' + '?' + query + '&t=' + param;
+    iframe.src = protocol + "//" + host + '/checker.html' + '?' + query + '&t=' + param;
 
     div.appendChild(iframe);
     var x = document.getElementsByTagName('script')[0];
