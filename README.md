@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## 利用ライブラリ
 
-You can use the [editor on GitHub](https://github.com/YoshiteruIwasaki/browserchecker/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### font-awesome
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+version:4.7.0
 
-### Markdown
+https://fontawesome.com/v4.7.0/
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### jquery
 
-```markdown
-Syntax highlighted code block
+version:3.2.1
 
-# Header 1
-## Header 2
-### Header 3
+https://github.com/jquery/jquery/releases/tag/3.2.1
 
-- Bulleted
-- List
+### popper
 
-1. Numbered
-2. List
+version:1.12.9
 
-**Bold** and _Italic_ and `Code` text
+https://github.com/FezVrasta/popper.js/releases/tag/v1.12.9
 
-[Link](url) and ![Image](src)
-```
+### bootstrap
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+version:4.0.0
 
-### Jekyll Themes
+https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YoshiteruIwasaki/browserchecker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### mdbootstrap
 
-### Support or Contact
+version:4.4.5
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://github.com/mdbootstrap/bootstrap-material-design/releases/tag/4.4.5
